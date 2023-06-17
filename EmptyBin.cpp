@@ -24,7 +24,8 @@ file_size_structure ConvertFileSizeUnit(__int64 file_size);
 
 int main(int argc, char const *argv[])
 {
-    ShowWindow(FindWindow("ConsoleWindowClass", argv[0]), 0);
+    ShowWindow(FindWindow("ConsoleWindowClass", argv[0]), SW_HIDE);
+    ShowWindow(FindWindow("CASCADIA_HOSTING_WINDOW_CLASS", argv[0]), SW_HIDE);
 
     string file_name = "log.txt";
     fstream file;
